@@ -23,12 +23,12 @@
 	<div class="row">
 		<div class="col-md-12">
 			<ul id="source">
-				<li data-id="ALL" class="types active"><a href="#" class="active"><img src=""> VIEW ALL</a></li>
-				<li data-id="coder" class="types"><a href="#"><img class="typeicon" src="../static_media/img/coder-blue.png">CODING</a></li>
-				<li data-id="design" class="types"><a href="#"><img class="typeicon" src="../static_media/img/design-blue.png">DESIGN</a></li>
-				<li data-id="photo" class="types"><a href="#"><img class="typeicon" src="../static_media/img/photo-blue.png">PHOTO/VIDEO</a></li>
-				<li data-id="reporting" class="types"><a href="#"><img class="typeicon" src="../static_media/img/reporting-blue.png">REPORTING</a></li>
-				<li data-id="other" class="types"><a href="#"><img class="typeicon" src="../static_media/img/other-blue.png">OTHER</a></li>
+				<li data-id="ALL" class="types active"><a href="#" class="activec button"><img src=""> VIEW ALL</a></li>
+				<li data-id="coder" class="types"><a class="button" href="#"><img class="typeicon" src="../static_media/img/coder-blue.png">CODING</a></li>
+				<li data-id="design" class="types"><a class="button" href="#"><img class="typeicon" src="../static_media/img/design-blue.png">DESIGN</a></li>
+				<li data-id="photo" class="types"><a class="button" href="#"><img class="typeicon" src="../static_media/img/photo-blue.png">PHOTO/VIDEO</a></li>
+				<li data-id="reporting" class="types"><a class="button" href="#"><img class="typeicon" src="../static_media/img/reporting-blue.png">REPORTING</a></li>
+				<li data-id="other" class="types"><a class="button" href="#"><img class="typeicon" src="../static_media/img/other-blue.png">OTHER</a></li>
 		       </ul>
 		</div>
 	</div>
@@ -66,15 +66,24 @@
 	</div>
 	
 	<script>
-		$("#content").quicksand($("#data > li"), 
+		$("#source").quicksand($("#data > li"), 
 			{
-			  // all the parameters have sensible defaults
-			  // and in most cases can be optional
-			  duration: 1000,
-			  easing: "swing",
-			  attribute: "data-id",
+				// all the parameters have sensible defaults
+				// and in most cases can be optional
+				duration: 1000,
+				easing: "swing",
+				attribute: "data-id",
 			}
-		      );
+		);
+		// $("#content").quicksand($("#data > li"), 
+		// 	{
+		// 	  // all the parameters have sensible defaults
+		// 	  // and in most cases can be optional
+		// 	  duration: 1000,
+		// 	  easing: "swing",
+		// 	  attribute: "data-id",
+		// 	}
+		//       );
 	</script>
 	
 
