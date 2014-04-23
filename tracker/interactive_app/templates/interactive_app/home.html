@@ -16,7 +16,8 @@
 var geoJson = []
 
 //geojson builder
-	{% for user in users %}
+{% for user in users %}
+	{% if user.current_company != None%}
 	var object = {
 		type: 'Feature',
 		geometry: {
@@ -33,6 +34,7 @@ var geoJson = []
 };
 //yay we're making a dynamic geojson file!!
 	geoJson.push(object);
+	{% endif %}
 {% endfor %}
 
 //making a map
@@ -85,6 +87,10 @@ map.scrollWheelZoom.disable();
 
 
 </script>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 75cad437a6277bd524db493162f4b4c9c76f6af5
 {% endblock %}
 
